@@ -25,7 +25,7 @@ let context = { componentName, className };
 try {
     fs.writeFile(`${componentName}.component.ts`, mustache.render(typescriptTemplate, context));
     fs.writeFile(`${componentName}.component.html`, mustache.render(htmlTemplate, context));
-    fs.writeFile(`${componentName}.scss`, mustache.render(sassTemplate, context));
+    fs.writeFile(`${componentName}.component.scss`, mustache.render(sassTemplate, context));
 } catch (e) {
     console.log('An error occurred!', e);
 }
