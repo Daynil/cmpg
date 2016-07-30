@@ -55,7 +55,7 @@ export class FooSelectorComponent {
 ```
 
 If the templates are not to your liking, just go in `templates/` and
-edit away. Make sure to run step 2 again after making any changes.
+edit away. Make sure to run step 3 again after making any changes.
 
 That's it.
 
