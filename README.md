@@ -46,7 +46,7 @@ import { Component } from '@angular/core';
   module.Id: module.id,
   selector: 'foo-selector',
   templateUrl: 'foo-selector.component.html',
-  styleUrls: ['foo-selector.css']
+  styleUrls: ['foo-selector.component.css']
 })
 export class FooSelectorComponent {
 }
