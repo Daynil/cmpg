@@ -1,8 +1,13 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
+    moduleID: module.id,
     selector: '{{componentName}}',
-    template: require('./{{componentName}}.component.html'),
-    styles: [require('./{{componentName}}.scss').toString()]
+    templateUrl: '{{componentName}}.component.html',
+    stylesUrls: ['{{componentName}}.css']
 })
-export class {{className}} {}
+export class {{className}}Component {
+
+    constructor() { }
+
+}

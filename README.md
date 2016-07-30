@@ -34,7 +34,6 @@ result:
 ```
 ./
   |- foo-selector.component.ts
-  |- foo-selector.component.spec.ts
   |- foo-selector.component.html
   |- foo-selector.scss
 ```
@@ -45,8 +44,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'foo-selector',
-  template: require('./foo-selector.component.html'),
-  styles: [require('./foo-selector.scss').toString()]
+  templateUrl: 'foo-selector.component.html',
+  styleUrls: ['foo-selector.css']
 })
 export class FooSelectorComponent {
 }
