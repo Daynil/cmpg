@@ -49,6 +49,9 @@ import { Component } from '@angular/core';
   styleUrls: ['foo-selector.component.css']
 })
 export class FooSelectorComponent {
+
+  constructor() { }
+
 }
 ```
 
