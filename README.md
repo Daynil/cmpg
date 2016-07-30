@@ -5,8 +5,7 @@ taken from the [Angular 2 Style Guide](https://angular.io/styleguide)
 
 
 ### Templates
-Currently the templates reflect my personal use-case, which is a webpack-based build using
-Sass for styles. A good enhancement would be to somehow allow different template files to be specified.
+This is a fork of the original cmpg. This fork assumes System.js as a build tool and scaffolds the .ts file appropriately, as well as the style-guide recommended module.id component-relative naming.
 
 
 ### Usage
@@ -43,16 +42,20 @@ The TypeScript file will look like this:
 import { Component } from '@angular/core';
 
 @Component({
+  module.Id: module.id,
   selector: 'foo-selector',
   templateUrl: 'foo-selector.component.html',
-  styleUrls: ['foo-selector.css']
+  styleUrls: ['foo-selector.component.css']
 })
 export class FooSelectorComponent {
+
+  constructor() { }
+
 }
 ```
 
 If the templates are not to your liking, just go in `templates/` and
-edit away. Make sure to run step 2 again after making any changes.
+edit away. Make sure to run step 3 again after making any changes.
 
 That's it.
 
