@@ -5,8 +5,7 @@ taken from the [Angular 2 Style Guide](https://angular.io/styleguide)
 
 
 ### Templates
-Currently the templates reflect my personal use-case, which is a webpack-based build using
-Sass for styles. A good enhancement would be to somehow allow different template files to be specified.
+This is a fork of the original cmpg. This fork assumes System.js as a build tool and scaffolds the .ts file appropriately, as well as the style-guide recommended module.id component-relative naming.
 
 
 ### Usage
